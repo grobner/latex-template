@@ -28,6 +28,7 @@ clean:
 	rm -f *.fls
 	rm -f *.synctex.gz
 	rm -f $(MAIN)-diff*
+	rm -rf node_modules
 
 .PHONY: lint
 lint:

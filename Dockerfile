@@ -4,7 +4,9 @@ FROM paperist/texlive-ja
 RUN apt-get update
 RUN apt-get install -y nodejs
 RUN apt-get install -y npm
-RUN npm install -grobal
+WORKDIR /workdir
+COPY ["package.json", "package-lock.json*", "./"]
+RUN npm install --production
 
 # package install
 RUN tlmgr update --self --all
