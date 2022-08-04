@@ -37,4 +37,4 @@ git pull origin master
 	- `make lint` textlintを動かして文法、用語チェック
 	- `make fix` textlintを動かして修正する
 - `make clean` Dockerを落とす + 副産物を全削除
-- `make diff ` commit IDやブランチ名を指定して差分PDFを出力
+- `make diff` commit IDやブランチ名を指定して差分PDFを出力
