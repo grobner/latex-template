@@ -12,7 +12,7 @@ shell:
 
 .PHONY: compile
 compile:
-	docker run --rm -it -v $(PWD):/workdir $(IMAGE) uplatex $(MAIN).tex
+	docker run --rm -it -v $(PWD):/workdir $(IMAGE) platex $(MAIN).tex
 
 .PHONY: pdf
 pdf:
