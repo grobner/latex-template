@@ -1,4 +1,4 @@
-# exp-templete
+# latex-templete
 
 論文のための、LaTeXのテンプレート
 
@@ -25,12 +25,6 @@ git pull origin master
 ```
 
 
-## 差分PDF出力
-
-```
-latexdiff-vc -e utf8 --git --flatten --force -r [commit ID] main.tex
-```
-
 ## Makefileの構成
 
 - docker関連
@@ -43,8 +37,4 @@ latexdiff-vc -e utf8 --git --flatten --force -r [commit ID] main.tex
 	- `make lint` textlintを動かして文法、用語チェック
 	- `make fix` textlintを動かして修正する
 - `make clean` Dockerを落とす + 副産物を全削除
-
-
-
-commit IDにはブランチ名も指定することができる。
-latex-template
+- `make diff ` commit IDやブランチ名を指定して差分PDFを出力
