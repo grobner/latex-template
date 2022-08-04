@@ -12,11 +12,7 @@ shell:
 
 .PHONY: compile
 compile:
-	docker run --rm -it -v $(PWD):/workdir $(IMAGE) platex $(MAIN).tex
-
-.PHONY: pdf
-pdf:
-	docker run --rm -it -v $(PWD):/workdir $(IMAGE) dvipdfmx $(MAIN).dvi
+	docker run --rm -it -v $(PWD):/workdir $(IMAGE) latexmk $(MAIN).tex
 
 .PHONY: clean
 clean:

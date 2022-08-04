@@ -36,7 +36,6 @@ latexdiff-vc -e utf8 --git --flatten --force -r [commit ID] main.tex
 	- `make shell` Dockerのshellに接続する
 - コンパイル+PDF生成
 	- `make compile` コンパイルしてdviファイルを作成
-	- `make pdf` dviファイルからPDFを作成
 - textlint
 	- `make lint` textlintを動かして文法、用語チェック
 	- `make fix` textlintを動かして修正する
