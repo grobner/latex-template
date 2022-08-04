@@ -3,11 +3,13 @@
 論文のための、LaTeXのテンプレート
 
 構成は
+- dockerfile (LaTeX + textlint立ち上げ用)
 - gitignore (.DS_Store 回避用)
 - main.tex (ここに色々書く　ファイル分割推奨)
 - Makefile コンパイル
 - sankou.bib 参考文献
 
+あとは論文の構造に合わせて階層を作っていけば良いと思う。
 
 
 
