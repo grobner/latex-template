@@ -12,8 +12,8 @@
 \usepackage[subrefformat=parens]{subcaption}
 \usepackage{pdfpages}
 \usepackage{physics}
-\usepackage{algorithmicx}
-\usepackage{algpseudocode}
+\usepackage{algorithm, algpseudocode}
+% \usepackage{algpseudocode}
 %\usepackage{jtygm} %参考文献リストでの斜体を表示するのにたぶん必要
 \renewcommand{\bibname}{参考文献} %関連図書→参考文献に変える
 
@@ -31,6 +31,9 @@
 
 \newtheorem{thm}{定理}
 \newtheorem{dfn}{定義}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
 %
 
 \begin{document}
@@ -38,9 +41,25 @@
 \clearpage
 
 
+\begin{algorithm}[t]
+    \caption{なんとかなアルゴリズム}
+    \label{alg:hoge}
+    \begin{algorithmic}
+    \footnotesize{
+      \Require{$x$:なんとか，$\tau$:閾値}
+      \Ensure{$x$:ほにゃらら}
+      \Function{hoge}{$x$}
+        \State return $x$
+      \EndFunction
+    }
+    \end{algorithmic}
+  \end{algorithm}
+    
+うんち\cite{book_label}
 
-
+\bibliographystyle{junsrt}
 \bibliography{sankou}
+
 \clearpage
 
 %\appendix

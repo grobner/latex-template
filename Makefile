@@ -25,6 +25,9 @@ clean:
 	rm *.aux
 	rm *.log
 	rm *.pdf
+	rm *.blg
+	rm *.toc
+	rm *.bbl
 
 .PHONY: lint
 lint:
