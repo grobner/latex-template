@@ -1,6 +1,6 @@
 # exp-templete
 
-論文作成のための、LaTeXのテンプレート
+論文のための、LaTeXのテンプレート
 
 構成は
 - gitignore (.DS_Store 回避用)
@@ -28,6 +28,20 @@ git pull origin master
 ```
 latexdiff-vc -e utf8 --git --flatten --force -r [commit ID] main.tex
 ```
+
+## Makefileの構成
+
+- docker関連
+	- `make build` Dockerをビルドする
+	- `make shell` Dockerのshellに接続する
+- コンパイル+PDF生成
+	- `make compile` コンパイルしてdviファイルを作成
+	- `make pdf` dviファイルからPDFを作成
+- textlint
+	- `make lint` textlintを動かして文法、用語チェック
+	- `make fix` textlintを動かして修正する
+- `make clean` Dockerを落とす + 副産物を全削除
+
 
 
 commit IDにはブランチ名も指定することができる。
