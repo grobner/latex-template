@@ -12,3 +12,5 @@ RUN tlmgr install physics
 RUN tlmgr install siunitx
 RUN tlmgr install algorithmicx
 RUN tlmgr install algorithms
+
+RUN apt-get install -y latexdiff
