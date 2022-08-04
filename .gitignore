@@ -1,7 +1,15 @@
 .vscode
 .DS_Store
+
 *.aux
 *.log
 *.toc
 *.pdf
+*.fdb_latexmk
+*.bbl
+*.blg
+*.dvi
+*.fls
+*.synctex.gz
+
 node_modules

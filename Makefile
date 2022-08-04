@@ -17,13 +17,16 @@ compile:
 .PHONY: clean
 clean:
 	docker container prune
-	rm *.dvi
-	rm *.aux
-	rm *.log
-	rm *.pdf
-	rm *.blg
-	rm *.toc
-	rm *.bbl
+	rm $(MAIN).aux
+	rm $(MAIN).log
+	rm $(MAIN).toc
+	rm $(MAIN).pdf
+	rm $(MAIN).fdb_latexmk
+	rm $(MAIN).bbl
+	rm $(MAIN).blg
+	rm $(MAIN).dvi
+	rm $(MAIN).fls
+	rm $(MAIN).synctex.gz
 
 .PHONY: lint
 lint:
